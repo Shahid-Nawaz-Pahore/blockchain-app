@@ -1,7 +1,14 @@
+import { NavBar, Welcome, Footer, Transactions, Services, Loader } from "./components"
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <div className="min-h-screen">
+      <div className="gredient-bg-welcome">
+        <NavBar />
+        <Welcome />
+      </div>
+      <Services />
+      <Transactions />
+      <Footer />
+    </div>
   )
 }
